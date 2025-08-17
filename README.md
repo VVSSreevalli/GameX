@@ -41,4 +41,5 @@ GameX/
 
 ---
 
-##Live 
+##Live at-
+https://vvssreevalli.github.io/GameX/
