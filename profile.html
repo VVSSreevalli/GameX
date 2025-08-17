@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameX - User Profile</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/sidebar.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>GameX</h1>
+      <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    </div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="login.html">Login</a> |
+        <a href="register.html">Register</a>
+      </div>
+      <div class="search-container">
+        <form class="search-bar" action="search.html" method="get">
+          <input type="text" name="query" placeholder="Search products..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="nft.html">NFT Marketplace</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="profile.html">User Profile</a></li>
+      <li><a href="dashboard.html">Admin Dashboard</a></li>
+    </ul>
+  </aside>
+  <div class="overlay" onclick="closeSidebar()"></div>
+
+  <!-- MAIN USER PROFILE -->
+  <main class="profile-container">
+    <h2>User Profile</h2>
+    <div id="user-profile">
+      <!-- User details will be injected here by JS -->
+    </div>
+    <button onclick="editProfile()">Edit Profile</button>
+  </main>
+
+ 
+  <!-- JS -->
+  <script src="js/profile.js"></script>
+</body>
+</html>
